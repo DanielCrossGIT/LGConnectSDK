@@ -1,0 +1,148 @@
+/*Principal*/
+html, body, div, span, a, input, select, label, i, textarea, img, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; border: 0;}
+html, body {width: 100%; height: 100%;}
+body {background: url(../assets/images/conexion/fondo.png); background-size: 100% 100%; background-repeat: no-repeat;}
+body {position: relative; font-family: 'International';}
+div {margin: 0; padding: 0; border: 0;}
+td {width: 33%; font-size: 0.6em; font-family: 'International'}
+
+/*Fuentes*/
+@font-face {
+    font-family: 'International';
+    src:
+        
+      url('../assets/fonts/International.ttf') format('truetype');
+}
+
+#body {width: 100%; min-height: 100%; height:100%; position: relative;}
+.invisible { display: none; }
+
+/*Splash*/
+.splash { width: 100%; height: 100%; }
+.logo-WD { width: 50%; display: block; margin-top: 15%; margin-left: 27%;}
+
+/*Conexion de jugadores*/
+.background-juego{width:100%; height:100%;}
+.conexion-logo{padding-top:1%; padding-left:2%; display:inline-block;}
+.conexion-titulo{padding-top:2%; width: 30%; position: relative; left: 35%;}
+.conexion-imagenes-jugadores{ margin-top: 8%; margin-left:12%;}
+.conexion-nombres-jugadores{width:300px; display: inline-block; color: #FFF7F2; text-align:center;}
+.conexion-mensaje{width:100%; margin-top:3%; text-align:center; font-family: 'International'}
+.contenedor-creditos{position: relative;margin-top: -24%;text-align: center; margin-left: 22%; width: 55%; color:black;}
+.logo-upc {position: absolute; top: 11%; left: 43%;}
+.logo-upc-texto-1 {position: absolute; top: 28%; left: 28%; font-size:   0.9em; font-family: 'International'; color: black;}
+.logo-upc-texto-2 {position: absolute; top: 33%; left: 28%; width: 850px; font-size: 0.6em; font-family: 'International'; color: black;}
+
+/*Tablero*/
+.pizarra { position: relative; width: 100%;}
+.canvas-pizarra { position: absolute; width: 1200px; height: 700px; z-index: 10; margin-left: 3.5%; margin-top: 2.5% }
+.jugadores { position: relative; left: -15%; height: 310px;}
+.contenedor-palabras { position: relative; left: -15%; margin-top: 10%; margin-left: 30%;}
+.palabras { width: 100%; height: 400px; position: absolute;}
+.palabra1 {position: absolute; color: black; z-index: 1; margin-left: 5%; font-size: 1.5em;}
+.palabra2 {position: absolute; color: black; z-index: 1; margin-left: 55%; font-size: 1.5em;}
+.logo-juego { width: 20%; margin-left: 30%; }
+
+.panel-izquierdo { width: 70%; margin-left: 5%; display: inline-block;}
+.panel-derecho { width: 24%; display: inline-block; vertical-align: top; margin-top: 2%;}
+
+.contenedor-jugador { width: 180%; height: 1%; margin-bottom: 17%; margin-left: 30%; position: relative;}
+.jugador{ width: 40%; position: absolute; }
+.jugador-nombre { position: absolute; font-size: 3em; margin-top: 2%; margin-left: 3%;}
+.panel .contenedor-label { width: 60%; margin-left: 28%; margin-bottom: 9%; position: relative;}
+.panel .name-perfil { width: 70%; font-size: 2em; text-align: left; display: inline-block; }
+.panel .puntaje-jugador { width: 25%; font-size: 2em; display:inline-block; text-align: center; margin-left: 5%;}
+
+/*Pop-ups*/
+.pop-up-background { position: absolute; height: 110%; width: 100%; text-align: center; z-index: 20; background: rgba(0, 0, 0, 0.7);  }
+.pop-up-puntos { height: 55%; top: 15%; position: absolute; left: 21% }
+.pop-up-categoria { height: 55%; top: 15%; position: absolute; left: 21% }
+.pop-up-inicio-turno { height: 55%; top: 15%; position: absolute; left: 21%}
+.pop-up-categoria-texto { font-family: 'International'; font-size: 3em; color: black; position: absolute; text-align: center; left: 33%; width: 35%; top: 33%; }
+.texto-bienvenida { font-family: 'International'; font-size: 3em; color: white; position: absolute; text-align: center; left: 33%; width: 35%; top: 26%; }
+.pop-up-puntos-texto-1 { font-family: 'International'; font-size: 3em; color: #b3413c; position: absolute; text-align: center; left: 30%; width: 38%; top: 27%; }
+.pop-up-puntos-texto-2 { font-family: 'International'; font-size: 3em; color: black; position: absolute; text-align: center; left: 25%; width: 50%; top: 37%; }
+.pop-up-puntos-texto-3 { font-family: 'International'; font-size: 10em; color: black; position: absolute; text-align: center; left: 30%; width: 40%; top: 40%; }
+.pop-up-puntos-texto-4 { font-family: 'International'; font-size: 3em; color: #44addb; position: absolute; text-align: center; left: 30%; width: 40%; top: 56%; }
+.pop-up-puntos-texto-raya { position: absolute; left: 43%; width: 15%; top: 32% }
+.pop-up-turno-texto { font-family: 'International'; font-size: 5em; color: black; position: absolute; text-align: center; left: 30%; width: 40%; top: 23%; }
+.pop-up-turno-texto-2 { font-family: 'International'; font-size: 5em; color: #44addb; position: absolute; text-align: center; left: 30%; width: 40%; top: 25%; }
+.pop-up-turno-texto-3 { font-family: 'International'; font-size: 5em; color: black; position: absolute; text-align: center; left: 30%; width: 40%; top: 40%; }
+.pop-up-turno-texto-raya { position: absolute; left: 35%; width: 30%; top: 33%;}
+.pop-up-ganador { width: 60%; top: 10%; position: absolute; left: 23% }
+.pop-up-ganador-texto { font-family: 'International'; font-size: 5em; color: white; position: absolute; text-align: center; left: 33%; width: 40%; top: 50%; }
+.mensaje-bienvenida { text-align: center; width:100%; font-size: 4em; margin-top: 20%;}
+
+@keyframes type{
+    from { width: 0; }
+}
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100px; } 
+}
+
+/*Contador de inicio de turno*/
+#contadorTurno {
+    margin: 10px;
+    width: 125px;
+    border-radius:0.7em;
+    border:10px solid #007d82;
+    background-color: #00b39b;
+    color: #007d82;
+    position: absolute;
+    top: 45%;
+    left: 46%;
+}
+
+.pietimer {
+    position:relative;
+    font-size: 100px;
+    width:1em;
+    height:1em;
+    float: left;
+}
+.pietimer > .percent {
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    width: 2.0em;
+    font-size: 0.5em;
+    text-align:center;
+    display: none;
+    z-index:10;
+    font-weight:bold;
+}
+.pietimer > .slice {
+    position:absolute;
+    width:1em;
+    height:1em;
+    clip:rect(0px,1em,1em,0.5em);
+}
+.pietimer > .slice.gt50 {
+    clip:rect(auto, auto, auto, auto);
+}
+.pietimer > .slice > .pie {
+    position:absolute;
+    width:0.8em; /* 1 - (2 * border width) */
+    height:0.8em; /* 1 - (2 * border width) */
+    clip:rect(0em,0.5em,1em,0em);
+    -moz-border-radius:0.5em;
+    -webkit-border-radius:0.5em;
+    border-radius:0.5em;
+}
+.pietimer > .slice > .pie.fill {
+    -moz-transform:rotate(180deg) !important;
+    -webkit-transform:rotate(180deg) !important;
+    -o-transform:rotate(180deg) !important;
+    transform:rotate(180deg) !important;
+}
+.pietimer.fill > .percent {
+    display: none;
+}
+.pietimer.fill > .slice > .pie {
+    border: transparent;
+    background-color: #c0c0c0;
+    width:1em;
+    height:1em;
+}

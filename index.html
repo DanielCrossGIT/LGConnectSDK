@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--CONNECT SDK-->
+    <script src="js/general/cast_receiver.js"></script>
+    <script src="js/general/connect_bridge.js"></script>
+
+    <!--JQUERY-->
+    <script src="js/general/jquery.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/Block_A_Mouse.css">
+
+    <!--LOGICA DEL JUEGO-->
+    <script src="js/logica/logica.js" type="text/javascript"></script>
+    <!--<script src="js/logica/logica_alternativa.js" type="text/javascript"></script>-->
+
+    <!--INICIADOR DEL JUEGO-->
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#logo-WD").fadeIn(3000);
+            setTimeout(goNext, 6000);
+        });
+        function goNext() {
+            //CARGAR SIGUIENTE PAGINA
+            $('#seccionActiva').load('seleccionaTV.html');
+            cargarInicioAct();
+        }
+    </script>
+
+
+    <title>Block A Mouse</title>
+</head>
+<body>
+    <!--AUDIO DEL JUEGO-->
+    <audio id="backgroundMusic" loop src="assets/audio/background.mp3" type="audio/mp3" autoplay></audio>
+    <!--Contenedor-->
+    <div id="seccionActiva">
+        <div class="splash">
+            <!--LOGO DEL JUEGO-->
+            <img id="logo-WD" class="logo-WD" src="assets/images/splash/logo.png" style="display: none;" />
+        </div>
+    </div>
+</body>
+</html>
